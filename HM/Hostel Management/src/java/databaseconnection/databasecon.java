@@ -10,9 +10,10 @@ public class databasecon
  			
 		try
 		{
+			String dbUrl= System.getenv("JDBC_DATABASE_URL"); 
+			
 			Class.forName("com.mysql.jdbc.Driver");	
-			co = DriverManager.getConnection("jdbc:mysql://localhost:8080/hm","root","root");
-		}
+			co = DriverManager.getConnection(dburl); 
                 
                 
 		catch(Exception e)
