@@ -11,7 +11,7 @@ public class databasecon
 		try
 		{
 			Class.forName("com.mysql.jdbc.Driver");	
-			co = DriverManager.getConnection("jdbc:mysql://localhost:3306/hm","root","root");
+			co = DriverManager.getConnection("jdbc:mysql://localhost:8080/hm","root","root");
 		}
                 
                 
